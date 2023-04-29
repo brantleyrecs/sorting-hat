@@ -36,10 +36,38 @@ const cardsOnDom = (array) => {
   console.log(domString);
 } 
 
-const app = document.querySelector('#app')
+
 const allStudents = document.querySelector('#all-students')
 
 
 allStudents.addEventListener('click', () => {
   cardsOnDom(students)
+})
+
+const form = document.querySelector('form')
+
+const newStudent = (e) => {
+  e.preventDefault()
+
+  const newStudentObj = {
+    id: students.length + 1,
+    name: document.querySelector("#name").value,
+    // house: document.querySelector("#house").value,
+    imgURL: document.querySelector("#url").value,
+  }
+
+  students.push(newStudentObj)
+  cardsOnDom(students)
+  form.reset()
+}
+
+form.addEventListener('submit', newStudent)
+
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+const app = document.querySelector('#app')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
 })
