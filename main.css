@@ -1,3 +1,41 @@
 body {
-  background-image: url('photos/hogwarts-castle-thumbnail.jpeg');
+  background-image: url('photos/hogwarts-hall-harry-potter-movie-hd-wallpaper-uhdpaper.com-122@0@i.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+ /* background-size: ; */
+}
+
+h3 {
+  color: white
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.sorting-hat {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.card {
+  margin: 10px;
+  border: 2px black solid;
+ 
+}
+
+.align {
+  display: flex;
+  flex-direction: row;
 }
