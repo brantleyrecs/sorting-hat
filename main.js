@@ -112,7 +112,6 @@ const newStudent = (e) => {
 
   const randNum = Math.floor(Math.random() * 4)
 
-  const randomHouse = students[randNum]
 
   switch(randNum) {
     case 0:
@@ -131,14 +130,13 @@ const newStudent = (e) => {
       house =  'No house for you';
   };
 
-  console.log(randNum);
 
   
 
   const newStudentObj = {
     id: students.length + 2,
     name: document.querySelector("#name").value,
-    house: randomHouse.house,
+    house: house,
     imgURL: document.querySelector("#url").value,
   }
 
