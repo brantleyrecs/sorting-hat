@@ -39,3 +39,58 @@ h3 {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+@font-face {
+  font-family: 'magic school';
+  src: url('https: //www.dafont.com/magic-school.font');
+}
+
+.card-title {
+  font-family: 'magic school';
+}
+
+.Gryffindor {
+  background-color: #740001;
+  color: #D3A625;
+  font-family: 'magic school';
+}
+
+.Gryffindor:hover {
+  background-color: #890002;
+  color: #e8b529;
+}
+
+.Slytherin {
+  background-color: #1A472A;
+  color: #797979;
+}
+
+.Slytherin:hover {
+  background-color: #205a35;
+  color: #6c6c6c;
+}
+
+.Hufflepuff {
+  background-color: #FFD800;
+  color: #000000;
+}
+
+.Hufflepuff:hover {
+  background-color: #fbdf3d;
+  color: #161616;
+}
+
+.Ravenclaw {
+  background-color: #0E1A40;
+  color: #946B2D;
+}
+
+.Ravenclaw:hover {
+  background-color: #132357;
+  color: #ae7e35;
+}
+
+.dark-side {
+  background-color: #000000;
+  color: white;
+}

@@ -64,10 +64,10 @@ const cardsOnDom = (array) => {
     for (const student of array) {
        domString += `<div class="card" style="width: 18rem;">
   <img src="${student.imgURL}" class="card-img-top" alt="${student.name}">
-  <div class="card-body">
+  <div class="card-body  ${student.house}">
     <h5 class="card-title">${student.name}</h5>
     <p class="card-text">House: ${student.house}</p>
-    <button id="expelButton--${student.id}" type="button" class="btn btn-danger">Expel!</button>
+    <button id="expelButton--${student.id}" type="button" class="btn btn-dark">Expelliarmus!</button>
   </div>
 </div>`
    }
@@ -80,7 +80,7 @@ const expelledCardsOnDom = (array) => {
     for (const student of array) {
        domString += `<div class="card" style="width: 18rem;">
   <img src="${student.imgURL}" class="card-img-top" alt="${student.name}">
-  <div class="card-body">
+  <div class="card-body dark-side">
     <h5 class="card-title">${student.name}</h5>
     <p class="card-text">Joined the dark side!</p>
   </div>
