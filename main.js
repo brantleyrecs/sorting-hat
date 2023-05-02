@@ -12,6 +12,36 @@ const students = [
     house: "Gryffindor",
     imgURL: "https://static.boredpanda.com/blog/wp-content/uploads/2020/04/Bean-Sheeran-5e980d96dee76__880.jpg"
   },
+  {
+    id: 4,
+    name: "Gordon Beansay",
+    house: "Slytherin",
+    imgURL: "https://static.boredpanda.com/blog/wp-content/uploads/2020/04/gordon-ramsay-5e980da4014fd__880.jpg"
+  },
+  {
+    id: 5,
+    name: "Bean Harrington",
+    house: "Hufflepuff",
+    imgURL: "https://static.boredpanda.com/blog/wp-content/uploads/2020/04/Bean-harrington-5e980d92a1f3e__880.jpg"
+  },
+  {
+    id: 6,
+    name: "Her Royal Beanness, Bean Elizabeth II",
+    house: "Gryffindor",
+    imgURL: "https://www.boredpanda.com/blog/wp-content/uploads/2022/07/kingdomofbean_116428777_3109501102436284_8944407196081386068_n-62c7d093c1aa2__880.jpg"
+  },
+  {
+    id: 7,
+    name: "Leonardo Dibeanio",
+    house: "Ravenclaw",
+    imgURL: "https://www.boredpanda.com/blog/wp-content/uploads/2022/07/kingdomofbean_97208208_589354268673693_9197022883176026636_n-62c7d0426dfc7__880.jpg"
+  },
+  {
+    id: 8,
+    name: "Justin Beanber",
+    house: "Slytherin",
+    imgURL: "https://www.boredpanda.com/blog/wp-content/uploads/2022/07/kingdomofbean_95865566_158702342287846_4618543140992114017_n-62c7d02d2bcb0__880.jpg"
+  },
 ]
 
 const expelledStudents = [
@@ -107,8 +137,23 @@ allStudents.addEventListener('click', () => {
 })
 
 gryffindorButton.addEventListener('click', () => {
-  const gryffStudents = filter(students, 'gryffindor')
+  const gryffStudents = filter(students, 'Gryffindor')
   cardsOnDom(gryffStudents)
+})
+
+hufflepuffButton.addEventListener('click', () => {
+  const huffStudents = filter(students, 'Hufflepuff')
+  cardsOnDom(huffStudents)
+})
+
+ravenclawButton.addEventListener('click', () => {
+  const ravenStudents = filter(students, 'Ravenclaw')
+  cardsOnDom(ravenStudents)
+})
+
+slytherinButton.addEventListener('click', () => {
+  const slythStudents = filter(students, 'Slytherin')
+  cardsOnDom(slythStudents)
 })
 
 const form = document.querySelector('form')
