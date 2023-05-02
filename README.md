@@ -2,6 +2,7 @@
 
 ## Things Learned
 Planning helps make smaller projects out of bigger ones.
+It is not a bad thing to ask for help. Even if I didnt get a way to do it, I at least was told another way to search for it.
 
 ## Goals
 The goal of this project is to test your knowledge and to have a FUN time stretching yourself on your FIRST independent application that will become a part of your portfolio.
