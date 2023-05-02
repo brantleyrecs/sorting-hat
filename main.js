@@ -45,34 +45,40 @@ const cardsOnDom = (array) => {
    document.querySelector("#app").addEventListener("click", expelStudent)
 } 
 
-const expelledOnDom = (array) => {
+const expelledCardsOnDom = (array) => {
   let domString = "";
-  for (const student of array) {
-    domString += `<div class="card" style="width: 18rem;">
+    for (const student of array) {
+       domString += `<div class="card" style="width: 18rem;">
   <img src="${student.imgURL}" class="card-img-top" alt="${student.name}">
   <div class="card-body">
     <h5 class="card-title">${student.name}</h5>
-    <p class="card-text">Has gone to the dark side!</p>
+    <p class="card-text">Joined the dark side!</p>
   </div>
 </div>`
-  }
-  renderToDom("#bad", domString)
-}
+   }
+   renderToDom('#bad', domString)  
+  
+} 
+
+
+// first attempt at expel button
 
 const expelStudent = (event) => {
   if (event.target.id.includes("expelButton")) {
     const [, studentId] = event.target.id.split("--")
-    const studentIndex = students.findIndex(
-      (student) => Number(studentId) === student.id
+    const studentIndex = students.findIndex((student) => Number(studentId) === student.id
     )
-    const expelledStudent = students.splice(studentIndex, 1)
+    const expelledStudent = students[studentIndex]
+    students.splice(studentIndex, 1)
     expelledStudents.push(expelledStudent)
 
-    expelledOnDom(expelledStudent)
+    expelledCardsOnDom(expelledStudents)
     cardsOnDom(students)
     console.log(expelledStudents)
   }
 }
+
+
 
 
 const allStudents = document.querySelector('#all-students')
@@ -86,7 +92,7 @@ const filter = (array, houseString) => {
 
   for (const student of array) {
     if (student.house === houseString) {
-      houseArray.push(student)
+      houseArray.unshift(student)
     }
   }
 
@@ -97,7 +103,7 @@ const filter = (array, houseString) => {
 
 allStudents.addEventListener('click', () => {
   cardsOnDom(students)
-  expelledOnDom(expelledStudents)
+  expelledCardsOnDom(expelledStudents)
 })
 
 gryffindorButton.addEventListener('click', () => {
@@ -142,6 +148,7 @@ const newStudent = (e) => {
 
   students.push(newStudentObj)
   cardsOnDom(students)
+  expelledCardsOnDom(expelledStudents)
   form.reset()
 }
 
