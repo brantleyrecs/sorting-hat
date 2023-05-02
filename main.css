@@ -6,14 +6,26 @@ body {
  /* background-size: ; */
 }
 
+@font-face {
+  font-family: 'harry_pregular';
+  src: url('harryp-mvz6w-webfont.woff2') format('woff2'),
+       url('harryp-mvz6w-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 h3 {
-  color: white
+  font-family: 'harry_pregular';
+  font-weight: bold;
+  color: rgb(255, 255, 255)
 }
 
 .cards {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  
 }
 
 .sorting-hat {
@@ -28,69 +40,176 @@ h3 {
   margin: 20px;
 }
 
+.all {
+  font-family: 'harry_pregular';
+  width: 100px;
+    height: 50px;
+    border: none;
+    background: linear-gradient(120deg, #740002b0 20%, #ffd900b1 35%, #0e1a40c0 60%, #1a472ab8 90%);
+    color: white;
+    animation: floating 3s ease-in-out infinite;
+}
+
+.all:hover {
+  width: 100px;
+  height: 50px;
+  border: none;
+  background: linear-gradient(120deg, #930103 20%, #fcda1b 35%, #182b6a 60%, #27683e 90%);
+  color: white;
+}
+
+.btn-house {
+  font-family: 'harry_pregular';
+  background-color: rgba(0, 0, 0, 0.749);
+  border: 2px solid white;
+  color: white;
+  animation: floating 4s ease-in-out infinite;
+}
+
+.btn-house:hover {
+  background-color: rgba(0, 0, 0, 0.758);
+  border: 2px solid white;
+  color: white;
+}
+
+.modal-header {
+  background-color: #000000;
+  color: white;
+}
+
+
+.modal-body {
+  background-color: #000000;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-footer {
+  background-color: #000000;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.form-control {
+  background-color: black;
+  color: white;
+  margin: 10px;
+}
+
+.modal-title {
+  text-align: center;
+}
+
+.submit {
+  font-family: 'harry_pregular';
+  background-color: rgba(0, 0, 0, 0.749);
+  border: 2px solid white;
+  color: white;
+}
+
 .card {
   margin: 10px;
   border: 2px black solid;
- 
+  box-shadow: 10px 10px 10px #000000;
 }
 
 .align {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-@font-face {
-  font-family: 'magic school';
-  src: url('https: //www.dafont.com/magic-school.font');
+  flex-basis: 50%;
 }
 
 .card-title {
-  font-family: 'magic school';
+  font-family: 'harry_pregular';
 }
 
 .Gryffindor {
-  background-color: #740001;
+  font-family: 'harry_pregular';
+  background-color: #740002;
   color: #D3A625;
   font-family: 'magic school';
 }
 
-.Gryffindor:hover {
-  background-color: #890002;
-  color: #e8b529;
+button.Gryffindor {
+  font-family: 'harry_pregular';
+  background-color: #740002ae;
+  color: #D3A625;
+  font-family: 'magic school';
+  animation: floating 2.75s ease-in-out infinite;
+}
+
+
+
+@keyframes floating {
+  0% { transform: translate(0, 0px); }
+  50% { transform: translate(0, 15px); }
+  100% { transform: translate(0, -0px); }
+}
+
+button.Gryffindor:hover {
+  background-color: #740002;
+  color: #D3A625;
 }
 
 .Slytherin {
-  background-color: #1A472A;
-  color: #797979;
+  font-family: 'harry_pregular';
+  background-color: #1a472a;
+  color: #969696;
 }
 
-.Slytherin:hover {
-  background-color: #205a35;
-  color: #6c6c6c;
+button.Slytherin {
+  font-family: 'harry_pregular';
+  background-color: #1a472ac4;
+  color: #969696;
+  animation: floating 2s ease-in-out infinite;
+}
+
+button.Slytherin:hover {
+  background-color: #1a472a;
+  color: #969696;
 }
 
 .Hufflepuff {
-  background-color: #FFD800;
+  font-family: 'harry_pregular';
+  background-color: #ffd900;
   color: #000000;
 }
 
-.Hufflepuff:hover {
-  background-color: #fbdf3d;
-  color: #161616;
+button.Hufflepuff {
+  font-family: 'harry_pregular';
+  background-color: #ffd900ba;
+  color: #000000;
+  animation: floating 2.5s ease-in-out infinite;
+}
+
+button.Hufflepuff:hover {
+  background-color: #ffd900;
+  color: #000000;
 }
 
 .Ravenclaw {
-  background-color: #0E1A40;
+  font-family: 'harry_pregular';
+  background-color: #0e1a40;
   color: #946B2D;
 }
 
-.Ravenclaw:hover {
-  background-color: #132357;
-  color: #ae7e35;
+button.Ravenclaw {
+  font-family: 'harry_pregular';
+  background-color: #0e1a40c2;
+  color: #946B2D;
+  animation: floating 2.25s ease-in-out infinite;
+}
+
+button.Ravenclaw:hover {
+  background-color: #0e1a40;
+  color: #946B2D;
 }
 
 .dark-side {
   background-color: #000000;
+  font-family: 'harry_pregular';
   color: white;
 }
