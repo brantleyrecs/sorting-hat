@@ -138,7 +138,7 @@ button.Gryffindor {
   background-color: #740002ae;
   color: #D3A625;
   font-family: 'magic school';
-  animation: floating 2.75s ease-in-out infinite;
+  animation: floating 2.25s ease-in-out infinite;
 }
 
 
@@ -164,7 +164,7 @@ button.Slytherin {
   font-family: 'harry_pregular';
   background-color: #1a472ac4;
   color: #969696;
-  animation: floating 2s ease-in-out infinite;
+  animation: floating 2.75s ease-in-out infinite;
 }
 
 button.Slytherin:hover {
@@ -200,7 +200,7 @@ button.Ravenclaw {
   font-family: 'harry_pregular';
   background-color: #0e1a40c2;
   color: #946B2D;
-  animation: floating 2.25s ease-in-out infinite;
+  animation: floating 2s ease-in-out infinite;
 }
 
 button.Ravenclaw:hover {
