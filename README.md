@@ -4,6 +4,33 @@
 Planning helps make smaller projects out of bigger ones.
 It is not a bad thing to ask for help. Even if I didnt get a way to do it, I at least was told another way to search for it.
 
+
+# This is my Sorting Hat project [![Netlify Status](https://api.netlify.com/api/v1/badges/babd0ce7-105d-483e-b0bb-7520368cfbb4/deploy-status)](https://app.netlify.com/sites/brantleys-sorting-hat/deploys)
+
+This is my sorting hat project. It has a bunch of students and valdibean who is on the dark side. You can add yourself to the school and the sorting hat will place you in the house it beleves you belong in. But if you are a bad student you will be expelled to the dark side.
+
+https://brantleys-sorting-hat.netlify.app/
+
+## About the User
+-This would be a great app for any occasion where you need to be split up into teams. It is totaly random and fair but it comes with a fun twist.
+
+## Features 
+- Sorting is completely random
+- When added and your house is picked your card will have a matching color theme
+- you can sort by the house
+- There is a seperate class for students who have been expelled
+
+## Video Walkthrough of APP NAME <!-- A loom link is sufficient -->
+https://www.loom.com/share/829b90d831ea441ba2db6bea724af210
+
+## Relevant Links 
+- https://brantleys-sorting-hat.netlify.app/
+
+## Contributors
+- Michael Brantley https://github.com/brantleyrecs
+
+
+
 ## Goals
 The goal of this project is to test your knowledge and to have a FUN time stretching yourself on your FIRST independent application that will become a part of your portfolio.
 
