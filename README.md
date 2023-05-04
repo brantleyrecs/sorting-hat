@@ -20,9 +20,6 @@ https://brantleys-sorting-hat.netlify.app/
 - you can sort by the house
 - There is a seperate class for students who have been expelled
 
-## Video Walkthrough of APP NAME <!-- A loom link is sufficient -->
-https://www.loom.com/share/829b90d831ea441ba2db6bea724af210
-
 ## Relevant Links 
 - https://brantleys-sorting-hat.netlify.app/
 
